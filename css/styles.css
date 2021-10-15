@@ -10,6 +10,7 @@
   --button-hover-color: #188ce8;
   --filter-button-background-color: #f5f4fa;
   --line-color: #ececec;
+  --cards-border-color: #eeeeee;
 }
 
 p,
@@ -77,6 +78,24 @@ body {
   color: var(--second-text-color);
 }
 
+.features,
+.occupation,
+.team {
+  padding-bottom: 94px;
+}
+
+.features-list,
+.occupation-list,
+.team-list {
+  display: flex;
+}
+
+.features-item:not(:last-child),
+.occupation-item:not(:last-child),
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -142,16 +161,13 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
 .current-link {
-  color: var(--accent-color);
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -185,10 +201,15 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background-color: var(--accent-color);
+  border: transparent;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  min-width: 200px;
 }
-.btn:hover,
-.btn:focus {
+
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--button-hover-color);
 }
 
@@ -196,15 +217,6 @@ body {
 
 .features {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features-list {
-  display: flex;
-}
-
-.features-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-title {
@@ -225,31 +237,10 @@ body {
 
 /*------OCCUPATION------*/
 
-.occupation {
-  padding-bottom: 94px;
-}
-
-.occupation-list {
-  display: flex;
-}
-
-.occupation-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /*------TEAM------*/
 
 .team {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-list {
-  display: flex;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-img {
@@ -293,20 +284,19 @@ body {
   margin-bottom: 9px;
 }
 
-.address-location {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-}
-
+.address-location,
 .address-contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address-location {
+  color: var(--second-text-color);
+}
+
+.address-contacts {
   color: var(--contacts-color);
 }
 
@@ -362,6 +352,7 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
+  border-bottom: 1px solid var(--cards-border-color);
 }
 
 .works-link {
