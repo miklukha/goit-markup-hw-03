@@ -279,6 +279,20 @@ body {
   background-color: var(--third-text-color);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-location {
   font-style: normal;
   font-weight: normal;
