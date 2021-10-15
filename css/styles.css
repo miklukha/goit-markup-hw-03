@@ -9,11 +9,34 @@
   --additional-color: #000000;
   --button-hover-color: #188ce8;
   --filter-button-background-color: #f5f4fa;
+  --line-color: #ececec;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--first-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -69,6 +92,30 @@ body {
 
 /*------HEADER------ */
 
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link,
 .contacts-link {
   font-weight: 500;
@@ -79,6 +126,14 @@ body {
 
 .nav-link {
   color: var(--third-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
 }
 
 .contacts-link {
@@ -103,19 +158,25 @@ body {
 
 .hero {
   background-color: var(--third-text-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.btn {
+.hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -123,6 +184,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 .btn:hover,
 .btn:focus {
