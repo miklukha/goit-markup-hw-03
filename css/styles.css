@@ -84,6 +84,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 50px;
 }
 
 .pointer {
@@ -192,6 +193,20 @@ body {
 }
 
 /*------FEATURES------*/
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -199,6 +214,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -209,7 +225,37 @@ body {
 
 /*------OCCUPATION------*/
 
+.occupation {
+  padding-bottom: 94px;
+}
+
+.occupation-list {
+  display: flex;
+}
+
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*------TEAM------*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  display: block;
+  margin-bottom: 30px;
+}
 
 .team-item-title {
   font-weight: 500;
@@ -218,11 +264,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 
 .team-item-text {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
