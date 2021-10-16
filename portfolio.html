@@ -18,10 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="logo link header-logo"
@@ -90,10 +91,11 @@
                   alt="веб-сайт технокряк"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">Технокряк</h2>
-                <p class="works-text">Веб-сайт</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">Технокряк</h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -103,12 +105,13 @@
                   alt="постер с баскетболистами "
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="works-text">Дизайн</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="works-text">Дизайн</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -118,12 +121,13 @@
                   alt="эмблема рыбного ресторана"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">
-                  Ресторан <span lang="en">Seafood</span>
-                </h2>
-                <p class="works-text">Приложение</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="works-text">Приложение</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -133,10 +137,13 @@
                   alt="наушники"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">Проект <span lang="en">Prime</span></h2>
-                <p class="works-text">Маркетинг</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="works-text">Маркетинг</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -146,10 +153,13 @@
                   alt="коробки"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">Проект <span lang="en">Boxes</span></h2>
-                <p class="works-text">Приложение</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="works-text">Приложение</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -159,12 +169,13 @@
                   alt="экран компьютера"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 lang="en" class="works-title">
-                  Inspiration has no Borders
-                </h2>
-                <p class="works-text">Веб-сайт</p></a
+                <div class="works-item-description">
+                  <h2 lang="en" class="works-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -174,12 +185,13 @@
                   alt="открытая книга"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">
-                  Издание <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="works-text">Дизайн</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="works-text">Дизайн</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -189,10 +201,11 @@
                   alt="бирка"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 class="works-title">Проект <span lang="en">LAB</span></h2>
-                <p class="works-text">Маркетинг</p></a
+                <div class="works-item-description">
+                  <h2 class="works-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="works-text">Маркетинг</p>
+                </div></a
               >
             </li>
             <li class="works-item">
@@ -202,18 +215,19 @@
                   alt="человек печатает на компьютере"
                   width="370"
                   height="294"
-                  class="works-img"
                 />
-                <h2 lang="en" class="works-title">Growing Business</h2>
-                <p class="works-text">Приложение</p></a
-              >
+                <div class="works-item-description">
+                  <h2 lang="en" class="works-title">Growing Business</h2>
+                  <p class="works-text">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <a href="./index.html" class="logo footer-logo link"
           >Web<span class="logo-light">Studio</span></a
         >

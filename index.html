@@ -18,10 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="logo link header-logo"
@@ -57,10 +58,12 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-btn pointer">Заказать услугу</button>
+        <div class="hero-text">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero-btn">Заказать услугу</button>
+        </div>
       </section>
-      <section class="features">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features-list list">
@@ -95,7 +98,7 @@
           </ul>
         </div>
       </section>
-      <section class="occupation">
+      <section class="section occupation">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="occupation-list list">
@@ -126,7 +129,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
@@ -136,10 +139,11 @@
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
-                class="team-img"
               />
-              <h3 class="team-item-title">Игорь Демьяненко</h3>
-              <p lang="en" class="team-item-text">Product Designer</p>
+              <div class="team-item-description">
+                <h3 class="team-item-title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-item-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -147,11 +151,11 @@
                 alt="Ольга Репина"
                 width="270"
                 height="260"
-                class="team-img"
               />
-
-              <h3 class="team-item-title">Ольга Репина</h3>
-              <p lang="en" class="team-item-text">Frontend Developer</p>
+              <div class="team-item-description">
+                <h3 class="team-item-title">Ольга Репина</h3>
+                <p lang="en" class="team-item-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -159,10 +163,11 @@
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
-                class="team-img"
               />
-              <h3 class="team-item-title">Николай Тарасов</h3>
-              <p lang="en" class="team-item-text">Marketing</p>
+              <div class="team-item-description">
+                <h3 class="team-item-title">Николай Тарасов</h3>
+                <p lang="en" class="team-item-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -170,17 +175,18 @@
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
-                class="team-img"
               />
-              <h3 class="team-item-title">Михаил Ермаков</h3>
-              <p lang="en" class="team-item-text">UI Designer</p>
+              <div class="team-item-description">
+                <h3 class="team-item-title">Михаил Ермаков</h3>
+                <p lang="en" class="team-item-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <a href="./index.html" class="logo footer-logo link"
           >Web<span class="logo-light">Studio</span></a
         >
