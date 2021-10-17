@@ -202,7 +202,7 @@ body {
 }
 
 .features-item {
-  min-width: 270px;
+  width: 270px;
 }
 
 .features-item:not(:last-child) {
@@ -232,7 +232,7 @@ body {
 }
 
 .occupation-item {
-  min-width: 370px;
+  width: 370px;
 }
 
 .occupation-item:not(:last-child) {
@@ -364,7 +364,7 @@ body {
 }
 
 .works-item {
-  min-width: 370px;
+  width: 370px;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
